@@ -45,6 +45,6 @@ body{
 .calculator_button_equally{
     background-color: red;
     color: aliceblue;
-    grid-column: 2/-1;
+   
 }
 

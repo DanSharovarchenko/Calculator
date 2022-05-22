@@ -1,5 +1,5 @@
 const calc=document.querySelector('.calculator');
-const result=document.querySelector('#result');
+
 
 calc.addEventListener('click', function(event){
     if(!event.target.classList.contains('calculator_button')) return;
@@ -11,12 +11,12 @@ calc.addEventListener('click', function(event){
             result.innerText='';
             break;
 
-            case '=':
+        case '=':
     
-                result.innerText=eval(result.innerText).toFixed(2);
-                break;
+            result.innerText=eval(result.innerText).toFixed(2);
+            break;
 
-                default:
-                    result.innerText += value;
+        default:
+            result.innerText += value;
     }
 })
