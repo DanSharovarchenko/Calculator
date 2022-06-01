@@ -12,38 +12,137 @@
 </head>
 
 <body>
-<div class="calculator">
-
-    <output class="calculator_result" id="result"></output>
-
-    <button class="calculator_button">7</button>
-    <button class="calculator_button">8</button>
-    <button class="calculator_button">9</button>
-    <button class="calculator_button calculator_button_operator">+</button>
-
-    <button class="calculator_button">4</button>
-    <button class="calculator_button">5</button>
-    <button class="calculator_button">6</button>
-    <button class="calculator_button calculator_button_operator">-</button>
-
-    <button class="calculator_button">1</button>
-    <button class="calculator_button">2</button>
-    <button class="calculator_button">3</button>
-    <button class="calculator_button calculator_button_operator">*</button>
-
-    <button class="calculator_button">0</button>
-    <button class="calculator_button">.</button>
-    <button class="calculator_button">00</button>
-    <button class="calculator_button calculator_button_operator">/</button>
-
-    <button class="calculator_button calculator_button_clean">C</button>
-    <button class="calculator_button calculator_button_equally">=</button>
-    <button class="calculator_button calculator_button_operator">(</button>
-    <button class="calculator_button calculator_button_operator">)</button>
-</div>
+<div class="calculator"></div>
 
 
 <script src="Java.js">
+
+
+let output = document.createElement('output');
+output.className = "calculator_result";
+output.innerHTML="";
+calculator.prepend(output);
+
+let but7=  document.createElement('button');
+but7.className = "calculator_button";
+but7.innerHTML = "7";
+calculator.prepend(but7);
+
+let but8=  document.createElement('button');
+but8.className = "calculator_button";
+but8.innerHTML = "8";
+calculator.prepend(but8);
+
+let but9=  document.createElement('button');
+but9.className = "calculator_button";
+but9.innerHTML = "9";
+calculator.prepend(but9);
+
+let butPlus=  document.createElement('button');
+butPlus.className = "calculator_button calculator_button_operator";
+butPlus.innerHTML = "+";
+calculator.prepend(butPlus);
+
+let but4=  document.createElement('button');
+but4.className = "calculator_button";
+but4.innerHTML = "4";
+calculator.prepend(but4);
+
+let but5=  document.createElement('button');
+but5.className = "calculator_button";
+but5.innerHTML = "5";
+calculator.prepend(but5);
+
+let but6=  document.createElement('button');
+but6.className = "calculator_button";
+but6.innerHTML = "6";
+calculator.prepend(but6);
+
+let butMinus=  document.createElement('button');
+butMinus.className = "calculator_button calculator_button_operator";
+butMinus.innerHTML = "-";
+calculator.prepend(butMinus);
+
+let but1=  document.createElement('button');
+but1.className = "calculator_button";
+but1.innerHTML = "1";
+calculator.prepend(but1);
+
+let but2=  document.createElement('button');
+but2.className = "calculator_button";
+but2.innerHTML = "2";
+calculator.prepend(but2);
+
+let but3=  document.createElement('button');
+but3.className = "calculator_button";
+but3.innerHTML = "3";
+calculator.prepend(but3);
+
+let butMultiPly=  document.createElement('button');
+butMultiPly.className = "calculator_button calculator_button_operator";
+butMultiPly.innerHTML = "*";
+calculator.prepend(butMultiPly);
+
+let but0=  document.createElement('button');
+but0.className = "calculator_button";
+but0.innerHTML = "0";
+calculator.prepend(but0);
+
+let butdot=  document.createElement('button');
+butdot.className = "calculator_button";
+butdot.innerHTML = ".";
+calculator.prepend(butdot);
+
+let but00=  document.createElement('button');
+but00.className = "calculator_button";
+but00.innerHTML = "00";
+calculator.prepend(but00);
+
+let butDivide=  document.createElement('button');
+butDivide.className = "calculator_button calculator_button_operator";
+butDivide.innerHTML = "/";
+calculator.prepend(butDivide);
+
+let clean=document.createElement('button');
+clean.className="calculator_button calculator_button_clean";
+clean.innerHTML="C";
+calculator.prepend(clean);
+
+let equally=document.createElement('button');
+equally.className="calculator_button calculator_button_equally";
+equally.innerHTML="=";
+calculator.prepend(equally);
+
+let lBracket=document.createElement('button');
+lBracket.className="calculator_button calculator_button_operator";
+lBracket.innerHTML="(";
+calculator.prepend(lBracket);
+
+let rBraket=document.createElement('button');
+rBraket.className="calculator_button calculator_button_operator";
+rBraket.innerHTML=")";
+calculator.prepend(rBraket);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </script>
 
